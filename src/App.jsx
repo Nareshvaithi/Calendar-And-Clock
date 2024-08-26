@@ -72,12 +72,12 @@ function App() {
   }
   return (
     <div className='app-container'>
-      <h1 className='title'>Calender And Clock</h1>
+      <h1 className='title'>Calendar And Clock</h1>
       <Timedate/>
       <div className='calender'>
         <div className='calender-head'>
           <button className='previous' onClick={previous}>
-            <img src={lefticon} width={"20px"} alt="" />
+            <img src={lefticon} width={"20px"}/>
           </button>
           <select value={selectedDate.getMonth()} onChange={handlemonth}>
             {Months.map((month,index)=>(
@@ -90,7 +90,7 @@ function App() {
             ))}
           </select>
           <button className='next' onClick={next}>
-            <img src={righticon} width={"20px"} alt="" />
+            <img src={righticon} width={"20px"}/>
           </button>
         </div>
           <div className='weekdays'>
