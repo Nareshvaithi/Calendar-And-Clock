@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+body{
+    background-color: #c7ecee;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app-container{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.calender{
+    width: 400px;
+    background-color: #f9ca24;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calender-head{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    background-color:#95afc0;
+    padding: 5px;
+    border-radius: 5px;
+}
+.calender-head button{
+    background-color: #95afc0;
+    border: #95afc0;
+    outline: none;
+}
+.calender-head select{
+    border: 1px solid #95afc0;
+    outline: none;
+    font-size: 18px;
+}
+.weekdays{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.weekdays div{
+    margin: 8px;
+    font-size: 18x;
+    font-weight: 900;
+}
+.weekdays div:nth-child(1){
+    color: red;
+}
+.dates{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.partic-day,.empty{
+    font-size: 18px;
+    padding: 5px 18px;
+    text-align: center;
+}
+.partic-day:hover{
+    background-color: #95afc0;
+}
+.current{
+    background-color: navy;
+    color: white;
+
+}
+.empty:hover{
+    background-color: none;
+}
+.time-date-container{
+    text-align: center;
+}
+.time-date-container h1{
+    font-size: 5rem;
+}
+.time-date-container h3{
+    font-size: 1.5rem;
+}
+.title{
+    font-size: 3rem;
+    color: #2456f9;
+}
